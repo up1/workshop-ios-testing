@@ -1,0 +1,6 @@
+excluded:
+  - TopMoviesTests
+  - Pods
+line_length: 300
+identifier_name:
+  min_length: 2
