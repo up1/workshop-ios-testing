@@ -14,4 +14,3 @@ class XRandom {
         return Int.random(in: 0...10)
     }
 }
-
