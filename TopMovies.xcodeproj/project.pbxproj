@@ -23,6 +23,7 @@
 		A2EC68C722C53156001B7FB7 /* MyRandomNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */; };
 		A2EC68C922C53182001B7FB7 /* MyRandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68C822C53182001B7FB7 /* MyRandomNumber.swift */; };
 		A2EC68CB22C53702001B7FB7 /* SettingsWithUserDefaultsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68CA22C53702001B7FB7 /* SettingsWithUserDefaultsTests.swift */; };
+		A2EC68CD22C53E92001B7FB7 /* MoviesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68CC22C53E92001B7FB7 /* MoviesViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRandomNumberTest.swift; sourceTree = "<group>"; };
 		A2EC68C822C53182001B7FB7 /* MyRandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRandomNumber.swift; sourceTree = "<group>"; };
 		A2EC68CA22C53702001B7FB7 /* SettingsWithUserDefaultsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWithUserDefaultsTests.swift; sourceTree = "<group>"; };
+		A2EC68CC22C53E92001B7FB7 /* MoviesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				033B0D3E2077CD7F00EC4C46 /* SettingsTests.swift */,
 				A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */,
 				A2EC68CA22C53702001B7FB7 /* SettingsWithUserDefaultsTests.swift */,
+				A2EC68CC22C53E92001B7FB7 /* MoviesViewControllerTests.swift */,
 			);
 			path = TopMoviesTests;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A2EC68CB22C53702001B7FB7 /* SettingsWithUserDefaultsTests.swift in Sources */,
 				033B0D3F2077CD7F00EC4C46 /* SettingsTests.swift in Sources */,
 				A2EC68C722C53156001B7FB7 /* MyRandomNumberTest.swift in Sources */,
+				A2EC68CD22C53E92001B7FB7 /* MoviesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
