@@ -20,6 +20,8 @@
 		03BBBFF7207D0A9300177A59 /* MoviesClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BBBFF6207D0A9300177A59 /* MoviesClient.swift */; };
 		03E2E22420868B1100C6EE9A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2E22320868B1100C6EE9A /* UserDefaultsKeys.swift */; };
 		03F2984B207D38AC004418DB /* MoviesParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F2984A207D38AC004418DB /* MoviesParser.swift */; };
+		A2EC68C722C53156001B7FB7 /* MyRandomNumberTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */; };
+		A2EC68C922C53182001B7FB7 /* MyRandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC68C822C53182001B7FB7 /* MyRandomNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		03BBBFF6207D0A9300177A59 /* MoviesClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesClient.swift; sourceTree = "<group>"; };
 		03E2E22320868B1100C6EE9A /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		03F2984A207D38AC004418DB /* MoviesParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesParser.swift; sourceTree = "<group>"; };
+		A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRandomNumberTest.swift; sourceTree = "<group>"; };
+		A2EC68C822C53182001B7FB7 /* MyRandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRandomNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				03BBBFF6207D0A9300177A59 /* MoviesClient.swift */,
 				03F2984A207D38AC004418DB /* MoviesParser.swift */,
 				03E2E22320868B1100C6EE9A /* UserDefaultsKeys.swift */,
+				A2EC68C822C53182001B7FB7 /* MyRandomNumber.swift */,
 			);
 			path = TopMovies;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			children = (
 				033B0D352077C88900EC4C46 /* Info.plist */,
 				033B0D3E2077CD7F00EC4C46 /* SettingsTests.swift */,
+				A2EC68C622C53156001B7FB7 /* MyRandomNumberTest.swift */,
 			);
 			path = TopMoviesTests;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 				03BB8508207BEDC30030821E /* MovieCell.swift in Sources */,
 				033B0D412077DF8300EC4C46 /* SettingsViewController.swift in Sources */,
 				03E2E22420868B1100C6EE9A /* UserDefaultsKeys.swift in Sources */,
+				A2EC68C922C53182001B7FB7 /* MyRandomNumber.swift in Sources */,
 				03BBBFF1207CE9D700177A59 /* MoviesRouter.swift in Sources */,
 				03F2984B207D38AC004418DB /* MoviesParser.swift in Sources */,
 				03BB8504207BE4470030821E /* MoviesViewController.swift in Sources */,
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				033B0D3F2077CD7F00EC4C46 /* SettingsTests.swift in Sources */,
+				A2EC68C722C53156001B7FB7 /* MyRandomNumberTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
