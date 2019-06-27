@@ -32,17 +32,13 @@ class SettingsTests: XCTestCase {
     
     func test_number_allows_2() {
         let vc = settingsViewController()
-        let _ = vc.textField(vc.number,
-            shouldChangeCharactersIn: NSRange(location: 0, length: 0),
-            replacementString: "2")
+        vc.enterText("2")
         XCTAssertTrue(vc.error.isHidden)
     }
     
     func test_number_allows_200() {
         let vc = settingsViewController()
-        let _ = vc.textField(vc.number,
-            shouldChangeCharactersIn: NSRange(location: 0, length: 0),
-            replacementString: "200")
+        vc.enterText("200")
         XCTAssertTrue(vc.error.isHidden)
     }
     
@@ -58,9 +54,9 @@ class SettingsTests: XCTestCase {
         XCTAssertFalse(vc.error.isHidden)
     }
     
-    func test_number_does_not_allow_z2() {
+    func test_number_does_not_allow_x2() {
         let vc = settingsViewController()
-        vc.enterText("z2")
+        vc.enterText("x2")
         XCTAssertFalse(vc.error.isHidden)
     }
     
@@ -71,3 +67,4 @@ extension SettingsViewController {
         _ = textField(number, shouldChangeCharactersIn: NSRange(location: number.text!.count, length: 0), replacementString: text)
     }
 }
+
