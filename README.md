@@ -50,3 +50,43 @@ class FakeUserDefaults: UserDefaults {
 ```
 
 ## Code for Testing in Top moview page
+
+MoviesViewControllerTests
+```
+class MoviesViewControllerTests: XCTestCase {
+    
+    func moviesViewController(
+        client: MoviesClient = StubMoviesClient(movies: []))
+        -> MoviesViewController {
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "Movies")
+            as! MoviesViewController
+        vc.moviesClient = client
+        let _ = vc.view
+        return vc
+
+    }
+    
+    func createMovie(title: String = "TEST") -> Movie {
+        return Movie(title: title)
+    }
+    
+    // Your test cases
+    
+}
+
+
+class StubMoviesClient: MoviesClient {
+    var movies: [Movie]
+    init(movies: [Movie]) {
+        self.movies = movies
+    }
+    
+    override func fetchMovies(completion: (([Movie]) -> Void)?) {
+        completion!(movies)
+    }
+}
+
+
+```
