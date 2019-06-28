@@ -1,6 +1,6 @@
 import Foundation
 
-class MoviesParser {
+struct MoviesParser {
     func movies(from data: Data) -> [Movie] {
         let decoder = JSONDecoder()
         do {
