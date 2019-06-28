@@ -26,7 +26,7 @@ extension SettingsViewController {
 }
 ```
 
-SettingsWithUserDefaultsTests
+SettingsWithUserDefaultsTests.swift
 ```
 class SettingsWithUserDefaultsTests: SettingsTests {
     // Your test cases
@@ -51,7 +51,7 @@ class FakeUserDefaults: UserDefaults {
 
 ## Code for Testing in Top moview page
 
-MoviesViewControllerTests
+MoviesViewControllerTests.swift
 ```
 class MoviesViewControllerTests: XCTestCase {
     
@@ -89,4 +89,59 @@ class StubMoviesClient: MoviesClient {
 }
 
 
+```
+
+## Code for test Movies Client
+
+MoviesClientTests.swift
+```
+class MoviesClientTests: XCTestCase {
+
+    func test_fetch_calls_completion() {
+        let client = MoviesClient()
+        client.router = StubMoviesRouter(limit: 6)
+        let completionExpectation = expectation(description: "Fetch movies should call completion")
+        client.fetchMovies { movies in
+            completionExpectation.fulfill()
+        }
+        waitForExpectations(timeout: 5)
+    }
+
+}
+
+class StubMoviesRouter: MoviesRouter {
+    override func urlRequest() -> URLRequest {
+        let url = URL(string: "http://192.168.1.33:8882/us/rss/topmovies/limit=6/json")!
+        return URLRequest(url: url)
+    }
+}
+```
+
+## UI Testing in Top Moview Page
+
+TopMoviesUITests.swift
+```
+class TopMoviesUITests: XCTestCase {
+
+    override func setUp() {
+        continueAfterFailure = false
+        let app = XCUIApplication()
+        app.launchEnvironment["url"] = "http://192.168.1.33:8882/us/rss/topmovies/limit=6/json"
+        app.launch()
+    }
+
+    func test_show_6_items() {
+        let app = XCUIApplication()
+        let collectionViewsQuery = app.collectionViews
+        XCTAssertEqual(6, collectionViewsQuery.cells.count)
+    }
+
+    func test_show_first_item() {
+        let app = XCUIApplication()
+        let collectionViewsQuery = app.collectionViews
+        let firstMovieName = collectionViewsQuery.cells.element(boundBy: 0).staticTexts["movieName"].label
+        XCTAssertEqual("Dumbox", firstMovieName)
+    }
+
+}
 ```
