@@ -117,7 +117,7 @@ class StubMoviesRouter: MoviesRouter {
 }
 ```
 
-## UI Testing in Top Moview Page
+## UI Testing in Top Movies Page
 
 TopMoviesUITests.swift
 ```
