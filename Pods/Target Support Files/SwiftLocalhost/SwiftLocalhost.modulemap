@@ -1,0 +1,6 @@
+framework module SwiftLocalhost {
+  umbrella header "SwiftLocalhost-umbrella.h"
+
+  export *
+  module * { export * }
+}

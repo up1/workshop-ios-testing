@@ -1,0 +1,1543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0072CE1EB0410C3C73452CBB74A8B42B /* CRStaticFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C153E36A340612F362D39DB2BDB4DF6A /* CRStaticFileManager.m */; };
+		0184CE21C7CF27D3BFF0FAEB423378B9 /* GARequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FB24AE089617D9E325FCACD6B09632 /* GARequestPayload.swift */; };
+		0478ACE9568821DB0C113079EC61E5AB /* CRRoute_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = E2481800E9DF84E3202C231BD303D19F /* CRRoute_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		084B7903DCB9B507E8CE1FD821D8E87C /* CRServerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BA581AA21E945B8D40E32E45BBC9908 /* CRServerConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 023A6802928B948137A4D0045EEC472A /* Security.framework */; };
+		1189215EC04CDDD878226F827E41F4F4 /* Criollo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E142EAFF089D06A4DEA2A7A744D188 /* Criollo-dummy.m */; };
+		12FFF2298C2F0D7C754A998786A510CC /* CRFCGIServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C09DADDBAC281F58FD4DFA10CBC863E /* CRFCGIServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13181BB48A99338EF372FBD3EDF76F51 /* CRFCGIResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = E6541CA92A96DE95B8BE395007812384 /* CRFCGIResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		14160B82CA170CF9FC97113F10CCC5E7 /* SwiftLocalhost-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BA7EFAA1CDBFD1E17C37953E1E4DB03 /* SwiftLocalhost-dummy.m */; };
+		14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */; };
+		172B334B46E8D3C97D45C67E8F9ADE1C /* CRServer_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A6739AAF3AE17F6042839E3BC2449119 /* CRServer_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1A777528A537A2E4D94029540D04A589 /* CRView.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D9C78540C7EC0FED751BCB2CA67C74 /* CRView.m */; };
+		1AC4B793918AA6B69F17814356E39B42 /* CRStaticFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1784E855E30599E1D2C97EF75B7BAD3E /* CRStaticFileManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1CE89D9F5037DE464A45A7C9E252B4C6 /* CRFCGIRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD0C91E39E8F64280F1A9CF8457EE4 /* CRFCGIRecord.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1ED96C94BF91CC2A3F65A2CD61966BF3 /* CRRouteMatchingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 1616B81A13521D526526D6F5409B041D /* CRRouteMatchingResult.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C945F8137C8CA5BAF72C34FB0A201E6 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9429DF8498A9FE03E293D4413167ED94 /* CFNetwork.framework */; };
+		20B91122CB24164BA486E1A0A718B3E0 /* CRServer.h in Headers */ = {isa = PBXBuildFile; fileRef = F96AA565641EFE9F70906064BDFD4D57 /* CRServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23B4793A9D69B9BC2E8F414732D6B482 /* CRServerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3FC419F87F516D26725AEF0B9B44A7 /* CRServerConfiguration.m */; };
+		258DD0FDDA697C8F9750F55444EE8A44 /* CRView.h in Headers */ = {isa = PBXBuildFile; fileRef = 65E6FD54FFFEB4BACE33F198CC7C541C /* CRView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 60A917C32D65EEA8148C91080B37AEE1 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D18C077D6FEB77F64CF3691A9A8B73D /* CRUploadedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F76821CAA0C9831891477500005461 /* CRUploadedFile.m */; };
+		2E197229189C8207122FED49BCC3162D /* CRFCGIServerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D13B350062A290C7CF74204BAFCA5FC /* CRFCGIServerConfiguration.m */; };
+		302D177814BD6514C6A4A049BDC8B989 /* CRRouteMatchingResult_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DD3DAE5215DFF7823AD12E5F29ED7D8 /* CRRouteMatchingResult_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3150ECD0A818D2B4CBEEAC1862B9AB99 /* GARequestLoggingServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E4A0CB5D519726EB8C3A3BD17223A /* GARequestLoggingServer.swift */; };
+		32DC530C5EBA5757602DCE81ED362137 /* CRApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B759DDEFCF6EF26C9A6DE4BF0B23C4F /* CRApplication.m */; };
+		33F85ACA797AA809F2350AD27E5E0BD9 /* CRApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = EADF94D12D7F9EFB2581CC2484806CAC /* CRApplication.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		343D3DCE7557A2FF5549C4EDC7AB2B60 /* CRRequestRange.m in Sources */ = {isa = PBXBuildFile; fileRef = B0A11E2242217086E6BD21774F4C9B48 /* CRRequestRange.m */; };
+		3BA775D1A3F9A92EE51640A3D2166493 /* CRStaticDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 457FBA9BBF6A801C5FCB3B1C26CDD6B8 /* CRStaticDirectoryManager.m */; };
+		3CAD95EE4A1029F668ACFF282CD6955C /* CRRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 657A44CC7846FC8D1DFA8AE4CC3BC1E2 /* CRRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40E53AA6E57ED45C696DA5C88D96DEA0 /* Criollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6248835135CB2BDD7F11129A25B817 /* Criollo.framework */; };
+		411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D5B484A097C7387D82969045B2C4CE /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465C027B1D0BA17A4FDAE617D628E681 /* CRResponse_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 74AD62B0286E585F65A3EA5C2713BF8E /* CRResponse_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B6115F2DA1FBBF9D9066B3E78E81F35 /* CRResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F78C72275F8855E2E04CD61C746F2E1 /* CRResponse.m */; };
+		4BF466807631DC96E0F29CDBBA19FB67 /* CRResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F925F0604DA935B046BBC1DF3001D1A /* CRResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BFD8D8AD8ACAF5D10122EEB678BA9C3 /* CRFCGIConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BC83C40B7B99F25976FF2A961CAF6E0 /* CRFCGIConnection.m */; };
+		5116ABB64CC4C9B5F30AFCDE2E3BC94F /* Criollo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C2856281EDB61EA5AB687C329AAB857 /* Criollo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		533DB67742B05524FF92FDA14AA769F3 /* CRFCGIConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E90E7322AF6AD3CC2EAD11F91DABD05 /* CRFCGIConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		536168DC2EB2435E2DBFAD39B6CC73F6 /* CRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E1CE2DC19B4F1EDE84353368A4B5E380 /* CRViewController.m */; };
+		55BEDF1ADB68038D0E1B1CD2E87C92DA /* CRViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F1C7217A269081F060A244D0C06EBEFF /* CRViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55E048B4091B1BC53DE8449C8C962C35 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */; };
+		57E60A2866C4293D0E75333E0A20AE80 /* CRHTTPServerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9B44DDAD919C8C51802B28A7448A75 /* CRHTTPServerConfiguration.m */; };
+		57E799B5C6CC92E0BBF924B1A65374EC /* CRMimeTypeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA83B1AAF157AF53E420F2EBB19E2FFA /* CRMimeTypeHelper.m */; };
+		587CAD619E684E2D3A94CE0D15AADE00 /* CRStaticDirectoryManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C10013E585C3B09FA81EB0FEB725955 /* CRStaticDirectoryManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5A7D298756AFA3C7B24CDE440516862E /* CRNib.h in Headers */ = {isa = PBXBuildFile; fileRef = 00A42EC1FDA2C95EC36F846F01964850 /* CRNib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5DEE0B4EADF3B0B2C42DAEE626F86B55 /* SwiftLocalhost-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F6AC71BD9E5BF2AC3EE930414AFFAD0 /* SwiftLocalhost-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5EBA175F715D9320E08F328AD78B8E4B /* Pods-TopMoviesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5E2BF2C10966E28146CC98377527D08 /* Pods-TopMoviesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6337C0BB911F38611223123B9B92A6D1 /* CRFCGIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EF2C433067D4BF9A899AFEE82BF4422 /* CRFCGIRequest.m */; };
+		639389BBCB6020A07896C7200C70B5BE /* CRRequestRange_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 350D61A232484E21935EA90588AA434C /* CRRequestRange_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63CDDBDD718BADEABD600D7FF0EE91D1 /* NSHTTPCookie+Criollo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC49AD4656BAA08668A035E4A985E3A /* NSHTTPCookie+Criollo.m */; };
+		6556D87C10C3D48286FBF523169DDB2F /* CRHTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5F0222A3D906BC44BEB1080A0062646 /* CRHTTPServer.m */; };
+		657E896AC21DBBC3B011BAC111303340 /* CRRouteController.h in Headers */ = {isa = PBXBuildFile; fileRef = F46B69FD50FF935CE560201C5DED0E87 /* CRRouteController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		68611F6BE4602652A77679CF6D5FDDAE /* CRServer.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4595D74F4D55672E376AF8B55B3B13 /* CRServer.m */; };
+		6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCB3D7D72F3CE7E56031666A9054D37 /* CocoaAsyncSocket-dummy.m */; };
+		6C9AAEFE0230C8F5F401F6A967D1AB4C /* CRHTTPServerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = ACCA8E2BEA707F9CE22AE01D1CAFCE5F /* CRHTTPServerConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6EC33A696EC76E5366C6789C5CE93502 /* CRMimeTypeHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 179A71082E68BBBA719656F671C63188 /* CRMimeTypeHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F063862F733177B04A73EFD402F11B7 /* CRNib.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6C0E2670F52EFDCF6DF4B5EBBB5D15 /* CRNib.m */; };
+		713D074C7654AD6E1E27FA036794B083 /* CRRouter_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = AB3FC9D17226DD48B7756D544ADA9759 /* CRRouter_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		736AAB80912E08A8CAF83FF385F4D115 /* CRUploadedFile_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 73894D05CA911DFFCECC61607D31C22B /* CRUploadedFile_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		74B308FF9E749A1969A606122650D93C /* CRHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 371F710B0DD5A775632A8E6A1DDC1D91 /* CRHTTPResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		758676ACA466F20257CE7EFB95EC59C5 /* CRFCGIResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BA404864D3B3271B70BC29681E2E1D28 /* CRFCGIResponse.m */; };
+		76B8A115A4752498DBF28527CC715C3D /* CRHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E7ED4B1FB20A9B40EE4BB8D5FB6FC83 /* CRHTTPConnection.m */; };
+		78688C37D5D6E7334D7FAC502CDBF83F /* NSString+Criollo.h in Headers */ = {isa = PBXBuildFile; fileRef = BFEB17FEF4D9B8724FBA52E84B9B84D0 /* NSString+Criollo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7CCDFB0367A42D774E47DB8B8CAE671B /* CRHTTPConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = EE0D8C19CBEE91F370E07A59615F4586 /* CRHTTPConnection.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D216FB3C437A1FBA8C49EC48DC463BB /* CRMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9B52CB1A13755C60194F1FE16255BD /* CRMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		838F71A4E6D2CB14FFA53E573FFCBB98 /* Pods-TopMovies-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D77908239E91C07CCFDE449B3BDABB1F /* Pods-TopMovies-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		974AAB8EF566AB23FFAE6538A63CF4E0 /* CRRouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3000CA1D0307E1FF361B0F74D83581 /* CRRouter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		974F9F69FA51FE6183BF5168A9B0EF76 /* CRHTTPSHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 45CBA740F38CF2D639223C0A9FF562FA /* CRHTTPSHelper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99A79A6AF1B29A61A84F3E1AB010480D /* CRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 791C55F16292E6E0AB68E511AF1FDE01 /* CRRequest.m */; };
+		9A31B438E82E9A4265030B65C0EC7D03 /* CRMessage_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = A3967924EC9CDD3D67943545EB04B2FC /* CRMessage_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9AF6FF07D3E6A9FD20E5CA08707C9710 /* CRConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D25D3383118901252B68A48A45DBA1B /* CRConnection.m */; };
+		9D8671E07487F6100FE9DDD3DE64C96C /* LocalhostPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C0252490F2F2867E25E0BB5BE43416 /* LocalhostPort.swift */; };
+		9E7FFB454B00139387AA24464DBA640F /* CRRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DF97CE358DD9B4282D073E498CE0A03 /* CRRoute.m */; };
+		9FD89CF79177FCB0728673A728C02291 /* CRRequest_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 55FF5276A35FF1F3C2A7928691C1DADF /* CRRequest_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5DE1589B5C6DACE68E58A5704C79608 /* NSString+Criollo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B87D959AA067F35D09D396AAEDA6558 /* NSString+Criollo.m */; };
+		A606932BEF35B2BAF2965B31E2FA58E6 /* CRConnection_Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = D012E3C71727D9A1D4E06CE824A5082A /* CRConnection_Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A95C6B6A10C84694590BCB84C49AB67C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */; };
+		AD05EE64627ECD86B550AFAA3E8D3F6F /* NSDate+RFC1123.h in Headers */ = {isa = PBXBuildFile; fileRef = 07194A095749A32F856FFD9C2463B697 /* NSDate+RFC1123.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD069E0B31FB170C7F96EA716CDEA565 /* CRTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1643C9B4C9F7BA8322B55AE66DAD1095 /* CRTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD9F77837557C17246687D7B29C17224 /* CRMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DD7DACD855D84CCA5DF0874087138 /* CRMessage.m */; };
+		B1FFED369B3C3486B5A527F6F3B27DFA /* CRHTTPSHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 89796286401DDC1573D4E2320B1B63F3 /* CRHTTPSHelper.m */; };
+		B24A810F3F3E2292C24DA72EA535567E /* CRRoute.h in Headers */ = {isa = PBXBuildFile; fileRef = 404CA68E9CFC23ED41F9A3E990CBB150 /* CRRoute.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB2D647D06B2CCAC1D576F4717C252F8 /* CRFCGIServerConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 25959C9A1EBF60F589257B25E1D96705 /* CRFCGIServerConfiguration.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BE17552E5D84DA1DC81FC04953F1BC48 /* CRUploadedFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 89B2F445A556C2CC6EDDA9BEC9BE926A /* CRUploadedFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 918C0B6D8EE27274CCACF82A12E6F818 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3982D6B07E0C1F093FCD54DEAE47CE4 /* GARequestPayloadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F12524A03EE8D0FAD41884E296227E7 /* GARequestPayloadFactory.swift */; };
+		C3FEF6C1769368081F976C511DD7B4FD /* CRFCGIRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A09CCDFC33920DC5A1BD13E27088BC /* CRFCGIRecord.m */; };
+		C6EBE13CF295A1BF91B9C157B0561857 /* Pods-TopMovies-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 785BCF232D4AFF7011321DDFCF18267B /* Pods-TopMovies-dummy.m */; };
+		C903922E536F9ECA73FD5F2CB6FE4F8E /* CRRouteController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2693B1E7F57535D575E4912095579A47 /* CRRouteController.m */; };
+		CA4DD8C6143C8E910D02ADA18C231B3D /* LocalhostServerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9402354DC3AD70914C46B0387D125C /* LocalhostServerResponse.swift */; };
+		CB3440DEB5A92BCFFDAC4EE02996B9DA /* CRRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = AF18EF0783B6EFF41DD68708E0174C1F /* CRRouter.m */; };
+		CE0E47303DA78506859EFE8D4F462863 /* CRHTTPServer.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2D157BC8E31355007A401DD45A1C04 /* CRHTTPServer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2E59E0DBB6F7EB3127A9C5D1514ADC3 /* LocalhostServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB7D5B69E03CE9754C2C7BD574E3E86 /* LocalhostServer.swift */; };
+		DAC0468D5BA48799C03557FB8C7E204E /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 492375A1FC5FC8174C76AB6032B84118 /* CocoaAsyncSocket.framework */; };
+		DE5AA3D28E208E76A1D76EDF336684E2 /* Pods-TopMoviesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F44A1A4E629679A443947BD3778ABB /* Pods-TopMoviesUITests-dummy.m */; };
+		DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = D722FFF3ADF0237355343FEE113B0682 /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E08F5522D09F2A3CAB275DBBFD1A044D /* CRConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 316D616AE6781CC6392887CA97054BF2 /* CRConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E184C980A1D9B5AF990D490DA66A93C7 /* GARequestLoggingReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366640E53270C3D94B02E7ABCE21A4A8 /* GARequestLoggingReport.swift */; };
+		E4BCAAD8661E6A4F8B49610DB36A5A65 /* Criollo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E9FAF63BD703B9BAD2EF8B5433A4F7A /* Criollo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5B1D5A61C51BAA85A822ABF8FE5A7B8 /* NSHTTPCookie+Criollo.h in Headers */ = {isa = PBXBuildFile; fileRef = C70557706E58A237138991FFD980FBBA /* NSHTTPCookie+Criollo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E70D1E5297A34C0276315A5BC6E49A5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */; };
+		E710EA6D6438F6247248B26FC725CC56 /* CRFCGIRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E111E989031B43CA614D210EFFFA134 /* CRFCGIRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E7523B92B954A4E856534A40F0C0A936 /* CRFCGIServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 603D1ACF2C50AD97D5A20A7C6C60213B /* CRFCGIServer.m */; };
+		E7CA8FDF9CE5A167CF868379A909ACAF /* CRRequestRange.h in Headers */ = {isa = PBXBuildFile; fileRef = C4BF418226414133CC51F8AE74B415D4 /* CRRequestRange.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA599DE4021064E72F3D6D31E467EF7B /* CRRouteMatchingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 59A65BD50615AB2635BC41E4BA6D0196 /* CRRouteMatchingResult.m */; };
+		ECAC74CE6177FDA0F283EC0ED5E793B4 /* CRHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = AA4D7205B2A82C67E05F5DF0D55032A3 /* CRHTTPResponse.m */; };
+		EEDA1A3CD3C331509A41307A7E9B0CA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */; };
+		F39AFE640356189C07B17DFA6A28ABC7 /* LocalhostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B643381AFD5EF5AAB4A1ED58BCC3482 /* LocalhostRouter.swift */; };
+		F7B3D7B0C3511A19AE0AE7EDBC2D37E4 /* NSDate+RFC1123.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5697C850DA43B8635996A2E7DA5E85 /* NSDate+RFC1123.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A35CA62498474DA2281F1A2E868F2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7770D06F861E88DAE2C4731EB670A7A8;
+			remoteInfo = Criollo;
+		};
+		42B0DF2C317959251C2F2360F18B7C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7770D06F861E88DAE2C4731EB670A7A8;
+			remoteInfo = Criollo;
+		};
+		4D99480C67A09A64D1B3864B1ACF929F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		6E4A64A13DBC603EDCD9399DE71779FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45B6FA8F37E6679DFBDA4BB278533E47;
+			remoteInfo = SwiftLocalhost;
+		};
+		CE62DD589C508DD75B35ED6442C11986 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00A42EC1FDA2C95EC36F846F01964850 /* CRNib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRNib.h; path = Criollo/Source/Routing/CRNib.h; sourceTree = "<group>"; };
+		020E57A1CD3F6B8925E603AC48F5AD94 /* Criollo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Criollo.release.xcconfig; sourceTree = "<group>"; };
+		023A6802928B948137A4D0045EEC472A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		07194A095749A32F856FFD9C2463B697 /* NSDate+RFC1123.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+RFC1123.h"; path = "Criollo/Source/Extensions/NSDate+RFC1123.h"; sourceTree = "<group>"; };
+		08FB24AE089617D9E325FCACD6B09632 /* GARequestPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GARequestPayload.swift; path = Source/GARequest/GARequestPayload.swift; sourceTree = "<group>"; };
+		0B346E5662A8BCFFC52C2643BA0315A1 /* Pods-TopMovies-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopMovies-acknowledgements.plist"; sourceTree = "<group>"; };
+		0B643381AFD5EF5AAB4A1ED58BCC3482 /* LocalhostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalhostRouter.swift; path = Source/Localhost/LocalhostRouter.swift; sourceTree = "<group>"; };
+		0E4E4A0CB5D519726EB8C3A3BD17223A /* GARequestLoggingServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GARequestLoggingServer.swift; path = Source/GARequest/GARequestLoggingServer.swift; sourceTree = "<group>"; };
+		0F3F52183CBC85897E2DC2090C35A0AB /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Libraries/OpenSSL/openssl.framework; sourceTree = "<group>"; };
+		1616B81A13521D526526D6F5409B041D /* CRRouteMatchingResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRouteMatchingResult.h; path = Criollo/Source/Routing/CRRouteMatchingResult.h; sourceTree = "<group>"; };
+		1643C9B4C9F7BA8322B55AE66DAD1095 /* CRTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRTypes.h; path = Criollo/Source/CRTypes.h; sourceTree = "<group>"; };
+		1784E855E30599E1D2C97EF75B7BAD3E /* CRStaticFileManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRStaticFileManager.h; path = Criollo/Source/CRStaticFileManager.h; sourceTree = "<group>"; };
+		179A71082E68BBBA719656F671C63188 /* CRMimeTypeHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRMimeTypeHelper.h; path = Criollo/Source/CRMimeTypeHelper.h; sourceTree = "<group>"; };
+		1B759DDEFCF6EF26C9A6DE4BF0B23C4F /* CRApplication.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRApplication.m; path = Criollo/Source/CRApplication.m; sourceTree = "<group>"; };
+		1C2856281EDB61EA5AB687C329AAB857 /* Criollo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Criollo.h; path = Criollo/Criollo.h; sourceTree = "<group>"; };
+		1C945F8137C8CA5BAF72C34FB0A201E6 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		1E90E7322AF6AD3CC2EAD11F91DABD05 /* CRFCGIConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIConnection.h; path = Criollo/Source/FCGI/CRFCGIConnection.h; sourceTree = "<group>"; };
+		1F78C72275F8855E2E04CD61C746F2E1 /* CRResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRResponse.m; path = Criollo/Source/CRResponse.m; sourceTree = "<group>"; };
+		225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		25959C9A1EBF60F589257B25E1D96705 /* CRFCGIServerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIServerConfiguration.h; path = Criollo/Source/FCGI/CRFCGIServerConfiguration.h; sourceTree = "<group>"; };
+		2693B1E7F57535D575E4912095579A47 /* CRRouteController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRouteController.m; path = Criollo/Source/Routing/CRRouteController.m; sourceTree = "<group>"; };
+		2777DE79D424F72C19DF27A389F66F1E /* Pods-TopMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopMovies.debug.xcconfig"; sourceTree = "<group>"; };
+		29E142EAFF089D06A4DEA2A7A744D188 /* Criollo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Criollo-dummy.m"; sourceTree = "<group>"; };
+		2B6BA0A15DE102FE6C6250FFDA0834F7 /* Pods-TopMoviesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopMoviesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2BA7EFAA1CDBFD1E17C37953E1E4DB03 /* SwiftLocalhost-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftLocalhost-dummy.m"; sourceTree = "<group>"; };
+		2E111E989031B43CA614D210EFFFA134 /* CRFCGIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIRequest.h; path = Criollo/Source/FCGI/CRFCGIRequest.h; sourceTree = "<group>"; };
+		316D616AE6781CC6392887CA97054BF2 /* CRConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRConnection.h; path = Criollo/Source/CRConnection.h; sourceTree = "<group>"; };
+		350D61A232484E21935EA90588AA434C /* CRRequestRange_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRequestRange_Internal.h; path = Criollo/Source/CRRequestRange_Internal.h; sourceTree = "<group>"; };
+		366640E53270C3D94B02E7ABCE21A4A8 /* GARequestLoggingReport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GARequestLoggingReport.swift; path = Source/GARequest/GARequestLoggingReport.swift; sourceTree = "<group>"; };
+		366BF5C3A4E9F25DF3756CC26790243A /* Pods-TopMovies-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopMovies-Info.plist"; sourceTree = "<group>"; };
+		371F710B0DD5A775632A8E6A1DDC1D91 /* CRHTTPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRHTTPResponse.h; path = Criollo/Source/HTTP/CRHTTPResponse.h; sourceTree = "<group>"; };
+		388B1708C7338C7963E854DCFF49B529 /* SwiftLocalhost-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLocalhost-prefix.pch"; sourceTree = "<group>"; };
+		38F76821CAA0C9831891477500005461 /* CRUploadedFile.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRUploadedFile.m; path = Criollo/Source/CRUploadedFile.m; sourceTree = "<group>"; };
+		3D5697C850DA43B8635996A2E7DA5E85 /* NSDate+RFC1123.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+RFC1123.m"; path = "Criollo/Source/Extensions/NSDate+RFC1123.m"; sourceTree = "<group>"; };
+		404CA68E9CFC23ED41F9A3E990CBB150 /* CRRoute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRoute.h; path = Criollo/Source/Routing/CRRoute.h; sourceTree = "<group>"; };
+		455D3F95319842D1C5CA2D74471B2E19 /* SwiftLocalhost.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftLocalhost.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		457FBA9BBF6A801C5FCB3B1C26CDD6B8 /* CRStaticDirectoryManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRStaticDirectoryManager.m; path = Criollo/Source/CRStaticDirectoryManager.m; sourceTree = "<group>"; };
+		45CBA740F38CF2D639223C0A9FF562FA /* CRHTTPSHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRHTTPSHelper.h; path = Criollo/Source/HTTP/CRHTTPSHelper.h; sourceTree = "<group>"; };
+		48D5B484A097C7387D82969045B2C4CE /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		492375A1FC5FC8174C76AB6032B84118 /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD3DAE5215DFF7823AD12E5F29ED7D8 /* CRRouteMatchingResult_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRouteMatchingResult_Internal.h; path = Criollo/Source/Routing/CRRouteMatchingResult_Internal.h; sourceTree = "<group>"; };
+		4EB7D5B69E03CE9754C2C7BD574E3E86 /* LocalhostServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalhostServer.swift; path = Source/Localhost/LocalhostServer.swift; sourceTree = "<group>"; };
+		55FF5276A35FF1F3C2A7928691C1DADF /* CRRequest_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRequest_Internal.h; path = Criollo/Source/CRRequest_Internal.h; sourceTree = "<group>"; };
+		59A65BD50615AB2635BC41E4BA6D0196 /* CRRouteMatchingResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRouteMatchingResult.m; path = Criollo/Source/Routing/CRRouteMatchingResult.m; sourceTree = "<group>"; };
+		5AB9D2531240C6AE316C08011D84A22F /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		5C09DADDBAC281F58FD4DFA10CBC863E /* CRFCGIServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIServer.h; path = Criollo/Source/FCGI/CRFCGIServer.h; sourceTree = "<group>"; };
+		5E3000CA1D0307E1FF361B0F74D83581 /* CRRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRouter.h; path = Criollo/Source/Routing/CRRouter.h; sourceTree = "<group>"; };
+		603D1ACF2C50AD97D5A20A7C6C60213B /* CRFCGIServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIServer.m; path = Criollo/Source/FCGI/CRFCGIServer.m; sourceTree = "<group>"; };
+		60A1BBFC91F35E6A0E52FF233906A09E /* Pods_TopMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60A917C32D65EEA8148C91080B37AEE1 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		60C927C6CB83B1BA71DCC2F9B010D1A4 /* Pods-TopMoviesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopMoviesUITests.modulemap"; sourceTree = "<group>"; };
+		61BF59420F7A8983ACBD63B090178D4A /* Pods-TopMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopMovies.release.xcconfig"; sourceTree = "<group>"; };
+		657A44CC7846FC8D1DFA8AE4CC3BC1E2 /* CRRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRequest.h; path = Criollo/Source/CRRequest.h; sourceTree = "<group>"; };
+		65E6FD54FFFEB4BACE33F198CC7C541C /* CRView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRView.h; path = Criollo/Source/Routing/CRView.h; sourceTree = "<group>"; };
+		68FBF258F3FB2B28F39CBD391599D2FF /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D25D3383118901252B68A48A45DBA1B /* CRConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRConnection.m; path = Criollo/Source/CRConnection.m; sourceTree = "<group>"; };
+		6E9FAF63BD703B9BAD2EF8B5433A4F7A /* Criollo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Criollo-umbrella.h"; sourceTree = "<group>"; };
+		6F6AC71BD9E5BF2AC3EE930414AFFAD0 /* SwiftLocalhost-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftLocalhost-umbrella.h"; sourceTree = "<group>"; };
+		70A09CCDFC33920DC5A1BD13E27088BC /* CRFCGIRecord.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIRecord.m; path = Criollo/Source/FCGI/CRFCGIRecord.m; sourceTree = "<group>"; };
+		7269F2E925CBD241B279D2F8111B91AD /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		72C0252490F2F2867E25E0BB5BE43416 /* LocalhostPort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalhostPort.swift; path = Source/Localhost/LocalhostPort.swift; sourceTree = "<group>"; };
+		73894D05CA911DFFCECC61607D31C22B /* CRUploadedFile_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRUploadedFile_Internal.h; path = Criollo/Source/CRUploadedFile_Internal.h; sourceTree = "<group>"; };
+		74AD62B0286E585F65A3EA5C2713BF8E /* CRResponse_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRResponse_Internal.h; path = Criollo/Source/CRResponse_Internal.h; sourceTree = "<group>"; };
+		785BCF232D4AFF7011321DDFCF18267B /* Pods-TopMovies-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopMovies-dummy.m"; sourceTree = "<group>"; };
+		791C55F16292E6E0AB68E511AF1FDE01 /* CRRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRequest.m; path = Criollo/Source/CRRequest.m; sourceTree = "<group>"; };
+		7B4DAEF74F61CFA1694AA78564D38651 /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		7C10013E585C3B09FA81EB0FEB725955 /* CRStaticDirectoryManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRStaticDirectoryManager.h; path = Criollo/Source/CRStaticDirectoryManager.h; sourceTree = "<group>"; };
+		7CC49AD4656BAA08668A035E4A985E3A /* NSHTTPCookie+Criollo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSHTTPCookie+Criollo.m"; path = "Criollo/Source/Extensions/NSHTTPCookie+Criollo.m"; sourceTree = "<group>"; };
+		7DF97CE358DD9B4282D073E498CE0A03 /* CRRoute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRoute.m; path = Criollo/Source/Routing/CRRoute.m; sourceTree = "<group>"; };
+		7E6248835135CB2BDD7F11129A25B817 /* Criollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Criollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E9B52CB1A13755C60194F1FE16255BD /* CRMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRMessage.h; path = Criollo/Source/CRMessage.h; sourceTree = "<group>"; };
+		81D9C78540C7EC0FED751BCB2CA67C74 /* CRView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRView.m; path = Criollo/Source/Routing/CRView.m; sourceTree = "<group>"; };
+		844DD408EB9EC77095525F38C95306DC /* Pods-TopMoviesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TopMoviesUITests-frameworks.sh"; sourceTree = "<group>"; };
+		89796286401DDC1573D4E2320B1B63F3 /* CRHTTPSHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRHTTPSHelper.m; path = Criollo/Source/HTTP/CRHTTPSHelper.m; sourceTree = "<group>"; };
+		89B2F445A556C2CC6EDDA9BEC9BE926A /* CRUploadedFile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRUploadedFile.h; path = Criollo/Source/CRUploadedFile.h; sourceTree = "<group>"; };
+		8BA581AA21E945B8D40E32E45BBC9908 /* CRServerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRServerConfiguration.h; path = Criollo/Source/CRServerConfiguration.h; sourceTree = "<group>"; };
+		8BC83C40B7B99F25976FF2A961CAF6E0 /* CRFCGIConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIConnection.m; path = Criollo/Source/FCGI/CRFCGIConnection.m; sourceTree = "<group>"; };
+		8E43E0F172196275F951EA588B6BD5CA /* Criollo-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Criollo-prefix.pch"; sourceTree = "<group>"; };
+		8EEAC928E7A5EF5EA27E696BEC99700E /* SwiftLocalhost.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLocalhost.release.xcconfig; sourceTree = "<group>"; };
+		8F12524A03EE8D0FAD41884E296227E7 /* GARequestPayloadFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GARequestPayloadFactory.swift; path = Source/GARequest/GARequestPayloadFactory.swift; sourceTree = "<group>"; };
+		918C0B6D8EE27274CCACF82A12E6F818 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		9429DF8498A9FE03E293D4413167ED94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		96B45778B6E124CA278F3FC8BB350F09 /* SwiftLocalhost-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftLocalhost-Info.plist"; sourceTree = "<group>"; };
+		9B87D959AA067F35D09D396AAEDA6558 /* NSString+Criollo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Criollo.m"; path = "Criollo/Source/Extensions/NSString+Criollo.m"; sourceTree = "<group>"; };
+		9D13B350062A290C7CF74204BAFCA5FC /* CRFCGIServerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIServerConfiguration.m; path = Criollo/Source/FCGI/CRFCGIServerConfiguration.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E7ED4B1FB20A9B40EE4BB8D5FB6FC83 /* CRHTTPConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRHTTPConnection.m; path = Criollo/Source/HTTP/CRHTTPConnection.m; sourceTree = "<group>"; };
+		9EF2C433067D4BF9A899AFEE82BF4422 /* CRFCGIRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIRequest.m; path = Criollo/Source/FCGI/CRFCGIRequest.m; sourceTree = "<group>"; };
+		9F925F0604DA935B046BBC1DF3001D1A /* CRResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRResponse.h; path = Criollo/Source/CRResponse.h; sourceTree = "<group>"; };
+		A228055E77D8B83AC5F0F0A5B1E9E9D0 /* Criollo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Criollo.modulemap; sourceTree = "<group>"; };
+		A3967924EC9CDD3D67943545EB04B2FC /* CRMessage_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRMessage_Internal.h; path = Criollo/Source/CRMessage_Internal.h; sourceTree = "<group>"; };
+		A6739AAF3AE17F6042839E3BC2449119 /* CRServer_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRServer_Internal.h; path = Criollo/Source/CRServer_Internal.h; sourceTree = "<group>"; };
+		A6BD0C91E39E8F64280F1A9CF8457EE4 /* CRFCGIRecord.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIRecord.h; path = Criollo/Source/FCGI/CRFCGIRecord.h; sourceTree = "<group>"; };
+		AA4D7205B2A82C67E05F5DF0D55032A3 /* CRHTTPResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRHTTPResponse.m; path = Criollo/Source/HTTP/CRHTTPResponse.m; sourceTree = "<group>"; };
+		AA6C0E2670F52EFDCF6DF4B5EBBB5D15 /* CRNib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRNib.m; path = Criollo/Source/Routing/CRNib.m; sourceTree = "<group>"; };
+		AB3FC9D17226DD48B7756D544ADA9759 /* CRRouter_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRouter_Internal.h; path = Criollo/Source/Routing/CRRouter_Internal.h; sourceTree = "<group>"; };
+		AB9B44DDAD919C8C51802B28A7448A75 /* CRHTTPServerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRHTTPServerConfiguration.m; path = Criollo/Source/HTTP/CRHTTPServerConfiguration.m; sourceTree = "<group>"; };
+		ACCA8E2BEA707F9CE22AE01D1CAFCE5F /* CRHTTPServerConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRHTTPServerConfiguration.h; path = Criollo/Source/HTTP/CRHTTPServerConfiguration.h; sourceTree = "<group>"; };
+		AF18EF0783B6EFF41DD68708E0174C1F /* CRRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRouter.m; path = Criollo/Source/Routing/CRRouter.m; sourceTree = "<group>"; };
+		B0A11E2242217086E6BD21774F4C9B48 /* CRRequestRange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRRequestRange.m; path = Criollo/Source/CRRequestRange.m; sourceTree = "<group>"; };
+		B3B6F4AD334C390EAB934A9B6F7F5E45 /* Pods-TopMoviesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TopMoviesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B6479CBE1EABACB918590BEF287E3C74 /* Pods-TopMovies.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TopMovies.modulemap"; sourceTree = "<group>"; };
+		BA404864D3B3271B70BC29681E2E1D28 /* CRFCGIResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRFCGIResponse.m; path = Criollo/Source/FCGI/CRFCGIResponse.m; sourceTree = "<group>"; };
+		BA83B1AAF157AF53E420F2EBB19E2FFA /* CRMimeTypeHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRMimeTypeHelper.m; path = Criollo/Source/CRMimeTypeHelper.m; sourceTree = "<group>"; };
+		BB3FC419F87F516D26725AEF0B9B44A7 /* CRServerConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRServerConfiguration.m; path = Criollo/Source/CRServerConfiguration.m; sourceTree = "<group>"; };
+		BE4595D74F4D55672E376AF8B55B3B13 /* CRServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRServer.m; path = Criollo/Source/CRServer.m; sourceTree = "<group>"; };
+		BFEB17FEF4D9B8724FBA52E84B9B84D0 /* NSString+Criollo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Criollo.h"; path = "Criollo/Source/Extensions/NSString+Criollo.h"; sourceTree = "<group>"; };
+		C130B292915A334D039FAA9B68F1204C /* Criollo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Criollo-Info.plist"; sourceTree = "<group>"; };
+		C153E36A340612F362D39DB2BDB4DF6A /* CRStaticFileManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRStaticFileManager.m; path = Criollo/Source/CRStaticFileManager.m; sourceTree = "<group>"; };
+		C4BF418226414133CC51F8AE74B415D4 /* CRRequestRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRequestRange.h; path = Criollo/Source/CRRequestRange.h; sourceTree = "<group>"; };
+		C70557706E58A237138991FFD980FBBA /* NSHTTPCookie+Criollo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSHTTPCookie+Criollo.h"; path = "Criollo/Source/Extensions/NSHTTPCookie+Criollo.h"; sourceTree = "<group>"; };
+		CB9511DC5E61C7474DDDDE585DC8F556 /* Criollo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Criollo.debug.xcconfig; sourceTree = "<group>"; };
+		CD2D157BC8E31355007A401DD45A1C04 /* CRHTTPServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRHTTPServer.h; path = Criollo/Source/HTTP/CRHTTPServer.h; sourceTree = "<group>"; };
+		D012E3C71727D9A1D4E06CE824A5082A /* CRConnection_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRConnection_Internal.h; path = Criollo/Source/CRConnection_Internal.h; sourceTree = "<group>"; };
+		D0F44A1A4E629679A443947BD3778ABB /* Pods-TopMoviesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TopMoviesUITests-dummy.m"; sourceTree = "<group>"; };
+		D1B5BE49E91060398D85EEF0415E4B23 /* Pods-TopMoviesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopMoviesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D32DAE39505079E2134CD9DB2210CCB7 /* Pods_TopMoviesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopMoviesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53DD7DACD855D84CCA5DF0874087138 /* CRMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRMessage.m; path = Criollo/Source/CRMessage.m; sourceTree = "<group>"; };
+		D5E2BF2C10966E28146CC98377527D08 /* Pods-TopMoviesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopMoviesUITests-umbrella.h"; sourceTree = "<group>"; };
+		D6755FD2C3B407ACA43939C5B9906769 /* Pods-TopMoviesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopMoviesUITests-Info.plist"; sourceTree = "<group>"; };
+		D722FFF3ADF0237355343FEE113B0682 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		D77908239E91C07CCFDE449B3BDABB1F /* Pods-TopMovies-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TopMovies-umbrella.h"; sourceTree = "<group>"; };
+		DB52170B58F66E897CE6F95BA72187CC /* Pods-TopMoviesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TopMoviesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DF9402354DC3AD70914C46B0387D125C /* LocalhostServerResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalhostServerResponse.swift; path = Source/Localhost/LocalhostServerResponse.swift; sourceTree = "<group>"; };
+		E1CE2DC19B4F1EDE84353368A4B5E380 /* CRViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRViewController.m; path = Criollo/Source/Routing/CRViewController.m; sourceTree = "<group>"; };
+		E2481800E9DF84E3202C231BD303D19F /* CRRoute_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRoute_Internal.h; path = Criollo/Source/Routing/CRRoute_Internal.h; sourceTree = "<group>"; };
+		E5F0222A3D906BC44BEB1080A0062646 /* CRHTTPServer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CRHTTPServer.m; path = Criollo/Source/HTTP/CRHTTPServer.m; sourceTree = "<group>"; };
+		E6541CA92A96DE95B8BE395007812384 /* CRFCGIResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRFCGIResponse.h; path = Criollo/Source/FCGI/CRFCGIResponse.h; sourceTree = "<group>"; };
+		E70E661B5FE7B2E47F600DC585E12DA7 /* Pods-TopMovies-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TopMovies-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EADF94D12D7F9EFB2581CC2484806CAC /* CRApplication.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRApplication.h; path = Criollo/Source/CRApplication.h; sourceTree = "<group>"; };
+		EE0D8C19CBEE91F370E07A59615F4586 /* CRHTTPConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRHTTPConnection.h; path = Criollo/Source/HTTP/CRHTTPConnection.h; sourceTree = "<group>"; };
+		EEDF61EC76C8B8AC3A198BC1FB8184B9 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		EFCB3D7D72F3CE7E56031666A9054D37 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		F09862FB7B75437A0D70B14BF70040FF /* SwiftLocalhost.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLocalhost.debug.xcconfig; sourceTree = "<group>"; };
+		F1C7217A269081F060A244D0C06EBEFF /* CRViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRViewController.h; path = Criollo/Source/Routing/CRViewController.h; sourceTree = "<group>"; };
+		F46B69FD50FF935CE560201C5DED0E87 /* CRRouteController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRRouteController.h; path = Criollo/Source/Routing/CRRouteController.h; sourceTree = "<group>"; };
+		F5EE9AFD9EA3149C42F5AC5496CF0B7C /* Criollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Criollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F96AA565641EFE9F70906064BDFD4D57 /* CRServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CRServer.h; path = Criollo/Source/CRServer.h; sourceTree = "<group>"; };
+		FE94D750EE77806AC9D2EA883B5C1C2E /* SwiftLocalhost.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftLocalhost.modulemap; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20386C4BEBA1CEA6E5EDB1669B7ADD76 /* CFNetwork.framework in Frameworks */,
+				14703875367641811BD5FE75ACD67C96 /* Foundation.framework in Frameworks */,
+				0EC1806437F66CC12F06DD7ACD1FBA4A /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1907B8B2656588F040F4B279CFA1515B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC0468D5BA48799C03557FB8C7E204E /* CocoaAsyncSocket.framework in Frameworks */,
+				A95C6B6A10C84694590BCB84C49AB67C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		205C51B43BA0DB44A5FF2549148499CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E53AA6E57ED45C696DA5C88D96DEA0 /* Criollo.framework in Frameworks */,
+				E70D1E5297A34C0276315A5BC6E49A5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CCAC068711F4A54E05D2A27E33D8B75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDA1A3CD3C331509A41307A7E9B0CA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D60CFB3115F00630A4B45216BF2554C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55E048B4091B1BC53DE8449C8C962C35 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08084DF6C3ACBAEC82DAA1C0B775A0C7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE94D750EE77806AC9D2EA883B5C1C2E /* SwiftLocalhost.modulemap */,
+				2BA7EFAA1CDBFD1E17C37953E1E4DB03 /* SwiftLocalhost-dummy.m */,
+				96B45778B6E124CA278F3FC8BB350F09 /* SwiftLocalhost-Info.plist */,
+				388B1708C7338C7963E854DCFF49B529 /* SwiftLocalhost-prefix.pch */,
+				6F6AC71BD9E5BF2AC3EE930414AFFAD0 /* SwiftLocalhost-umbrella.h */,
+				F09862FB7B75437A0D70B14BF70040FF /* SwiftLocalhost.debug.xcconfig */,
+				8EEAC928E7A5EF5EA27E696BEC99700E /* SwiftLocalhost.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLocalhost";
+			sourceTree = "<group>";
+		};
+		1AAA9D5C42179406FCF0AEA4DF72076D /* Pods-TopMoviesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				60C927C6CB83B1BA71DCC2F9B010D1A4 /* Pods-TopMoviesUITests.modulemap */,
+				D1B5BE49E91060398D85EEF0415E4B23 /* Pods-TopMoviesUITests-acknowledgements.markdown */,
+				DB52170B58F66E897CE6F95BA72187CC /* Pods-TopMoviesUITests-acknowledgements.plist */,
+				D0F44A1A4E629679A443947BD3778ABB /* Pods-TopMoviesUITests-dummy.m */,
+				844DD408EB9EC77095525F38C95306DC /* Pods-TopMoviesUITests-frameworks.sh */,
+				D6755FD2C3B407ACA43939C5B9906769 /* Pods-TopMoviesUITests-Info.plist */,
+				D5E2BF2C10966E28146CC98377527D08 /* Pods-TopMoviesUITests-umbrella.h */,
+				2B6BA0A15DE102FE6C6250FFDA0834F7 /* Pods-TopMoviesUITests.debug.xcconfig */,
+				B3B6F4AD334C390EAB934A9B6F7F5E45 /* Pods-TopMoviesUITests.release.xcconfig */,
+			);
+			name = "Pods-TopMoviesUITests";
+			path = "Target Support Files/Pods-TopMoviesUITests";
+			sourceTree = "<group>";
+		};
+		2346B3A983FBD1E25C25A6B9C7BD8D96 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70E98CCB31FB78D5B6DE2348E7B41C64 /* Pods-TopMovies */,
+				1AAA9D5C42179406FCF0AEA4DF72076D /* Pods-TopMoviesUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25CDC7CB9CB0343EC5197EFBB332B67E /* SwiftLocalhost */ = {
+			isa = PBXGroup;
+			children = (
+				366640E53270C3D94B02E7ABCE21A4A8 /* GARequestLoggingReport.swift */,
+				0E4E4A0CB5D519726EB8C3A3BD17223A /* GARequestLoggingServer.swift */,
+				08FB24AE089617D9E325FCACD6B09632 /* GARequestPayload.swift */,
+				8F12524A03EE8D0FAD41884E296227E7 /* GARequestPayloadFactory.swift */,
+				72C0252490F2F2867E25E0BB5BE43416 /* LocalhostPort.swift */,
+				0B643381AFD5EF5AAB4A1ED58BCC3482 /* LocalhostRouter.swift */,
+				4EB7D5B69E03CE9754C2C7BD574E3E86 /* LocalhostServer.swift */,
+				DF9402354DC3AD70914C46B0387D125C /* LocalhostServerResponse.swift */,
+				08084DF6C3ACBAEC82DAA1C0B775A0C7 /* Support Files */,
+			);
+			path = SwiftLocalhost;
+			sourceTree = "<group>";
+		};
+		2E1662509A9C935847787DBBDA4062DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8AF77D16A55E505D68D150CDFB555649 /* CocoaAsyncSocket */,
+				5031DC8F0E7CBEB6BFB90715260C040A /* Criollo */,
+				25CDC7CB9CB0343EC5197EFBB332B67E /* SwiftLocalhost */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5031DC8F0E7CBEB6BFB90715260C040A /* Criollo */ = {
+			isa = PBXGroup;
+			children = (
+				EADF94D12D7F9EFB2581CC2484806CAC /* CRApplication.h */,
+				1B759DDEFCF6EF26C9A6DE4BF0B23C4F /* CRApplication.m */,
+				316D616AE6781CC6392887CA97054BF2 /* CRConnection.h */,
+				6D25D3383118901252B68A48A45DBA1B /* CRConnection.m */,
+				D012E3C71727D9A1D4E06CE824A5082A /* CRConnection_Internal.h */,
+				1E90E7322AF6AD3CC2EAD11F91DABD05 /* CRFCGIConnection.h */,
+				8BC83C40B7B99F25976FF2A961CAF6E0 /* CRFCGIConnection.m */,
+				A6BD0C91E39E8F64280F1A9CF8457EE4 /* CRFCGIRecord.h */,
+				70A09CCDFC33920DC5A1BD13E27088BC /* CRFCGIRecord.m */,
+				2E111E989031B43CA614D210EFFFA134 /* CRFCGIRequest.h */,
+				9EF2C433067D4BF9A899AFEE82BF4422 /* CRFCGIRequest.m */,
+				E6541CA92A96DE95B8BE395007812384 /* CRFCGIResponse.h */,
+				BA404864D3B3271B70BC29681E2E1D28 /* CRFCGIResponse.m */,
+				5C09DADDBAC281F58FD4DFA10CBC863E /* CRFCGIServer.h */,
+				603D1ACF2C50AD97D5A20A7C6C60213B /* CRFCGIServer.m */,
+				25959C9A1EBF60F589257B25E1D96705 /* CRFCGIServerConfiguration.h */,
+				9D13B350062A290C7CF74204BAFCA5FC /* CRFCGIServerConfiguration.m */,
+				EE0D8C19CBEE91F370E07A59615F4586 /* CRHTTPConnection.h */,
+				9E7ED4B1FB20A9B40EE4BB8D5FB6FC83 /* CRHTTPConnection.m */,
+				371F710B0DD5A775632A8E6A1DDC1D91 /* CRHTTPResponse.h */,
+				AA4D7205B2A82C67E05F5DF0D55032A3 /* CRHTTPResponse.m */,
+				CD2D157BC8E31355007A401DD45A1C04 /* CRHTTPServer.h */,
+				E5F0222A3D906BC44BEB1080A0062646 /* CRHTTPServer.m */,
+				ACCA8E2BEA707F9CE22AE01D1CAFCE5F /* CRHTTPServerConfiguration.h */,
+				AB9B44DDAD919C8C51802B28A7448A75 /* CRHTTPServerConfiguration.m */,
+				45CBA740F38CF2D639223C0A9FF562FA /* CRHTTPSHelper.h */,
+				89796286401DDC1573D4E2320B1B63F3 /* CRHTTPSHelper.m */,
+				1C2856281EDB61EA5AB687C329AAB857 /* Criollo.h */,
+				7E9B52CB1A13755C60194F1FE16255BD /* CRMessage.h */,
+				D53DD7DACD855D84CCA5DF0874087138 /* CRMessage.m */,
+				A3967924EC9CDD3D67943545EB04B2FC /* CRMessage_Internal.h */,
+				179A71082E68BBBA719656F671C63188 /* CRMimeTypeHelper.h */,
+				BA83B1AAF157AF53E420F2EBB19E2FFA /* CRMimeTypeHelper.m */,
+				00A42EC1FDA2C95EC36F846F01964850 /* CRNib.h */,
+				AA6C0E2670F52EFDCF6DF4B5EBBB5D15 /* CRNib.m */,
+				657A44CC7846FC8D1DFA8AE4CC3BC1E2 /* CRRequest.h */,
+				791C55F16292E6E0AB68E511AF1FDE01 /* CRRequest.m */,
+				55FF5276A35FF1F3C2A7928691C1DADF /* CRRequest_Internal.h */,
+				C4BF418226414133CC51F8AE74B415D4 /* CRRequestRange.h */,
+				B0A11E2242217086E6BD21774F4C9B48 /* CRRequestRange.m */,
+				350D61A232484E21935EA90588AA434C /* CRRequestRange_Internal.h */,
+				9F925F0604DA935B046BBC1DF3001D1A /* CRResponse.h */,
+				1F78C72275F8855E2E04CD61C746F2E1 /* CRResponse.m */,
+				74AD62B0286E585F65A3EA5C2713BF8E /* CRResponse_Internal.h */,
+				404CA68E9CFC23ED41F9A3E990CBB150 /* CRRoute.h */,
+				7DF97CE358DD9B4282D073E498CE0A03 /* CRRoute.m */,
+				E2481800E9DF84E3202C231BD303D19F /* CRRoute_Internal.h */,
+				F46B69FD50FF935CE560201C5DED0E87 /* CRRouteController.h */,
+				2693B1E7F57535D575E4912095579A47 /* CRRouteController.m */,
+				1616B81A13521D526526D6F5409B041D /* CRRouteMatchingResult.h */,
+				59A65BD50615AB2635BC41E4BA6D0196 /* CRRouteMatchingResult.m */,
+				4DD3DAE5215DFF7823AD12E5F29ED7D8 /* CRRouteMatchingResult_Internal.h */,
+				5E3000CA1D0307E1FF361B0F74D83581 /* CRRouter.h */,
+				AF18EF0783B6EFF41DD68708E0174C1F /* CRRouter.m */,
+				AB3FC9D17226DD48B7756D544ADA9759 /* CRRouter_Internal.h */,
+				F96AA565641EFE9F70906064BDFD4D57 /* CRServer.h */,
+				BE4595D74F4D55672E376AF8B55B3B13 /* CRServer.m */,
+				A6739AAF3AE17F6042839E3BC2449119 /* CRServer_Internal.h */,
+				8BA581AA21E945B8D40E32E45BBC9908 /* CRServerConfiguration.h */,
+				BB3FC419F87F516D26725AEF0B9B44A7 /* CRServerConfiguration.m */,
+				7C10013E585C3B09FA81EB0FEB725955 /* CRStaticDirectoryManager.h */,
+				457FBA9BBF6A801C5FCB3B1C26CDD6B8 /* CRStaticDirectoryManager.m */,
+				1784E855E30599E1D2C97EF75B7BAD3E /* CRStaticFileManager.h */,
+				C153E36A340612F362D39DB2BDB4DF6A /* CRStaticFileManager.m */,
+				1643C9B4C9F7BA8322B55AE66DAD1095 /* CRTypes.h */,
+				89B2F445A556C2CC6EDDA9BEC9BE926A /* CRUploadedFile.h */,
+				38F76821CAA0C9831891477500005461 /* CRUploadedFile.m */,
+				73894D05CA911DFFCECC61607D31C22B /* CRUploadedFile_Internal.h */,
+				65E6FD54FFFEB4BACE33F198CC7C541C /* CRView.h */,
+				81D9C78540C7EC0FED751BCB2CA67C74 /* CRView.m */,
+				F1C7217A269081F060A244D0C06EBEFF /* CRViewController.h */,
+				E1CE2DC19B4F1EDE84353368A4B5E380 /* CRViewController.m */,
+				07194A095749A32F856FFD9C2463B697 /* NSDate+RFC1123.h */,
+				3D5697C850DA43B8635996A2E7DA5E85 /* NSDate+RFC1123.m */,
+				C70557706E58A237138991FFD980FBBA /* NSHTTPCookie+Criollo.h */,
+				7CC49AD4656BAA08668A035E4A985E3A /* NSHTTPCookie+Criollo.m */,
+				BFEB17FEF4D9B8724FBA52E84B9B84D0 /* NSString+Criollo.h */,
+				9B87D959AA067F35D09D396AAEDA6558 /* NSString+Criollo.m */,
+				D6ADFCB445752FCDB5293728FEB4656F /* Frameworks */,
+				73BC67708D56774BE73263253B33DB00 /* Support Files */,
+			);
+			path = Criollo;
+			sourceTree = "<group>";
+		};
+		70E98CCB31FB78D5B6DE2348E7B41C64 /* Pods-TopMovies */ = {
+			isa = PBXGroup;
+			children = (
+				B6479CBE1EABACB918590BEF287E3C74 /* Pods-TopMovies.modulemap */,
+				E70E661B5FE7B2E47F600DC585E12DA7 /* Pods-TopMovies-acknowledgements.markdown */,
+				0B346E5662A8BCFFC52C2643BA0315A1 /* Pods-TopMovies-acknowledgements.plist */,
+				785BCF232D4AFF7011321DDFCF18267B /* Pods-TopMovies-dummy.m */,
+				366BF5C3A4E9F25DF3756CC26790243A /* Pods-TopMovies-Info.plist */,
+				D77908239E91C07CCFDE449B3BDABB1F /* Pods-TopMovies-umbrella.h */,
+				2777DE79D424F72C19DF27A389F66F1E /* Pods-TopMovies.debug.xcconfig */,
+				61BF59420F7A8983ACBD63B090178D4A /* Pods-TopMovies.release.xcconfig */,
+			);
+			name = "Pods-TopMovies";
+			path = "Target Support Files/Pods-TopMovies";
+			sourceTree = "<group>";
+		};
+		73BC67708D56774BE73263253B33DB00 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A228055E77D8B83AC5F0F0A5B1E9E9D0 /* Criollo.modulemap */,
+				29E142EAFF089D06A4DEA2A7A744D188 /* Criollo-dummy.m */,
+				C130B292915A334D039FAA9B68F1204C /* Criollo-Info.plist */,
+				8E43E0F172196275F951EA588B6BD5CA /* Criollo-prefix.pch */,
+				6E9FAF63BD703B9BAD2EF8B5433A4F7A /* Criollo-umbrella.h */,
+				CB9511DC5E61C7474DDDDE585DC8F556 /* Criollo.debug.xcconfig */,
+				020E57A1CD3F6B8925E603AC48F5AD94 /* Criollo.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Criollo";
+			sourceTree = "<group>";
+		};
+		8AF77D16A55E505D68D150CDFB555649 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				D722FFF3ADF0237355343FEE113B0682 /* GCDAsyncSocket.h */,
+				1C945F8137C8CA5BAF72C34FB0A201E6 /* GCDAsyncSocket.m */,
+				48D5B484A097C7387D82969045B2C4CE /* GCDAsyncUdpSocket.h */,
+				918C0B6D8EE27274CCACF82A12E6F818 /* GCDAsyncUdpSocket.m */,
+				91F8BAE280BA183A0A2EA6E5691D0AC0 /* Support Files */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		91F8BAE280BA183A0A2EA6E5691D0AC0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEDF61EC76C8B8AC3A198BC1FB8184B9 /* CocoaAsyncSocket.modulemap */,
+				EFCB3D7D72F3CE7E56031666A9054D37 /* CocoaAsyncSocket-dummy.m */,
+				68FBF258F3FB2B28F39CBD391599D2FF /* CocoaAsyncSocket-Info.plist */,
+				5AB9D2531240C6AE316C08011D84A22F /* CocoaAsyncSocket-prefix.pch */,
+				60A917C32D65EEA8148C91080B37AEE1 /* CocoaAsyncSocket-umbrella.h */,
+				7269F2E925CBD241B279D2F8111B91AD /* CocoaAsyncSocket.debug.xcconfig */,
+				7B4DAEF74F61CFA1694AA78564D38651 /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		96E8E9559F000B3B208843F4DF42856F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				492375A1FC5FC8174C76AB6032B84118 /* CocoaAsyncSocket.framework */,
+				7E6248835135CB2BDD7F11129A25B817 /* Criollo.framework */,
+				ED82A74DFA02C1994E52717878FE973F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				96E8E9559F000B3B208843F4DF42856F /* Frameworks */,
+				2E1662509A9C935847787DBBDA4062DC /* Pods */,
+				DB5C03D66466DEC39446A4AC0CD559ED /* Products */,
+				2346B3A983FBD1E25C25A6B9C7BD8D96 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D6ADFCB445752FCDB5293728FEB4656F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F3F52183CBC85897E2DC2090C35A0AB /* openssl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB5C03D66466DEC39446A4AC0CD559ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				F5EE9AFD9EA3149C42F5AC5496CF0B7C /* Criollo.framework */,
+				60A1BBFC91F35E6A0E52FF233906A09E /* Pods_TopMovies.framework */,
+				D32DAE39505079E2134CD9DB2210CCB7 /* Pods_TopMoviesUITests.framework */,
+				455D3F95319842D1C5CA2D74471B2E19 /* SwiftLocalhost.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED82A74DFA02C1994E52717878FE973F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				9429DF8498A9FE03E293D4413167ED94 /* CFNetwork.framework */,
+				225DC4FA50DB41B6F1C7CD977B6575D5 /* Foundation.framework */,
+				023A6802928B948137A4D0045EEC472A /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4686B1E0237B0B4BB881BC44542E982E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				838F71A4E6D2CB14FFA53E573FFCBB98 /* Pods-TopMovies-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6533DCD1B6ACA7F2AC4B09B69AD22D93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EBA175F715D9320E08F328AD78B8E4B /* Pods-TopMoviesUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6858B8BE389D5B33849723BFBC79BDA1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DEE0B4EADF3B0B2C42DAEE626F86B55 /* SwiftLocalhost-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		760AC1A07E2D663F60ED19994164DB94 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F85ACA797AA809F2350AD27E5E0BD9 /* CRApplication.h in Headers */,
+				E08F5522D09F2A3CAB275DBBFD1A044D /* CRConnection.h in Headers */,
+				A606932BEF35B2BAF2965B31E2FA58E6 /* CRConnection_Internal.h in Headers */,
+				533DB67742B05524FF92FDA14AA769F3 /* CRFCGIConnection.h in Headers */,
+				1CE89D9F5037DE464A45A7C9E252B4C6 /* CRFCGIRecord.h in Headers */,
+				E710EA6D6438F6247248B26FC725CC56 /* CRFCGIRequest.h in Headers */,
+				13181BB48A99338EF372FBD3EDF76F51 /* CRFCGIResponse.h in Headers */,
+				12FFF2298C2F0D7C754A998786A510CC /* CRFCGIServer.h in Headers */,
+				BB2D647D06B2CCAC1D576F4717C252F8 /* CRFCGIServerConfiguration.h in Headers */,
+				7CCDFB0367A42D774E47DB8B8CAE671B /* CRHTTPConnection.h in Headers */,
+				74B308FF9E749A1969A606122650D93C /* CRHTTPResponse.h in Headers */,
+				CE0E47303DA78506859EFE8D4F462863 /* CRHTTPServer.h in Headers */,
+				6C9AAEFE0230C8F5F401F6A967D1AB4C /* CRHTTPServerConfiguration.h in Headers */,
+				974F9F69FA51FE6183BF5168A9B0EF76 /* CRHTTPSHelper.h in Headers */,
+				E4BCAAD8661E6A4F8B49610DB36A5A65 /* Criollo-umbrella.h in Headers */,
+				5116ABB64CC4C9B5F30AFCDE2E3BC94F /* Criollo.h in Headers */,
+				7D216FB3C437A1FBA8C49EC48DC463BB /* CRMessage.h in Headers */,
+				9A31B438E82E9A4265030B65C0EC7D03 /* CRMessage_Internal.h in Headers */,
+				6EC33A696EC76E5366C6789C5CE93502 /* CRMimeTypeHelper.h in Headers */,
+				5A7D298756AFA3C7B24CDE440516862E /* CRNib.h in Headers */,
+				3CAD95EE4A1029F668ACFF282CD6955C /* CRRequest.h in Headers */,
+				9FD89CF79177FCB0728673A728C02291 /* CRRequest_Internal.h in Headers */,
+				E7CA8FDF9CE5A167CF868379A909ACAF /* CRRequestRange.h in Headers */,
+				639389BBCB6020A07896C7200C70B5BE /* CRRequestRange_Internal.h in Headers */,
+				4BF466807631DC96E0F29CDBBA19FB67 /* CRResponse.h in Headers */,
+				465C027B1D0BA17A4FDAE617D628E681 /* CRResponse_Internal.h in Headers */,
+				B24A810F3F3E2292C24DA72EA535567E /* CRRoute.h in Headers */,
+				0478ACE9568821DB0C113079EC61E5AB /* CRRoute_Internal.h in Headers */,
+				657E896AC21DBBC3B011BAC111303340 /* CRRouteController.h in Headers */,
+				1ED96C94BF91CC2A3F65A2CD61966BF3 /* CRRouteMatchingResult.h in Headers */,
+				302D177814BD6514C6A4A049BDC8B989 /* CRRouteMatchingResult_Internal.h in Headers */,
+				974AAB8EF566AB23FFAE6538A63CF4E0 /* CRRouter.h in Headers */,
+				713D074C7654AD6E1E27FA036794B083 /* CRRouter_Internal.h in Headers */,
+				20B91122CB24164BA486E1A0A718B3E0 /* CRServer.h in Headers */,
+				172B334B46E8D3C97D45C67E8F9ADE1C /* CRServer_Internal.h in Headers */,
+				084B7903DCB9B507E8CE1FD821D8E87C /* CRServerConfiguration.h in Headers */,
+				587CAD619E684E2D3A94CE0D15AADE00 /* CRStaticDirectoryManager.h in Headers */,
+				1AC4B793918AA6B69F17814356E39B42 /* CRStaticFileManager.h in Headers */,
+				AD069E0B31FB170C7F96EA716CDEA565 /* CRTypes.h in Headers */,
+				BE17552E5D84DA1DC81FC04953F1BC48 /* CRUploadedFile.h in Headers */,
+				736AAB80912E08A8CAF83FF385F4D115 /* CRUploadedFile_Internal.h in Headers */,
+				258DD0FDDA697C8F9750F55444EE8A44 /* CRView.h in Headers */,
+				55BEDF1ADB68038D0E1B1CD2E87C92DA /* CRViewController.h in Headers */,
+				AD05EE64627ECD86B550AFAA3E8D3F6F /* NSDate+RFC1123.h in Headers */,
+				E5B1D5A61C51BAA85A822ABF8FE5A7B8 /* NSHTTPCookie+Criollo.h in Headers */,
+				78688C37D5D6E7334D7FAC502CDBF83F /* NSString+Criollo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82807D639FCFDF56A607D3970098A87 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2922C954DCA50DB1C087E9E9C9440393 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				DF77DA76BD5962EE7DD383126BBBBAC8 /* GCDAsyncSocket.h in Headers */,
+				411EE6BA92B228BF3497175C14FC7A90 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		07D31E6CD360FBFC59F77CA7B3BCE1B8 /* Pods-TopMoviesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 677F3B7032E304CE04FBE5EF13A9A563 /* Build configuration list for PBXNativeTarget "Pods-TopMoviesUITests" */;
+			buildPhases = (
+				6533DCD1B6ACA7F2AC4B09B69AD22D93 /* Headers */,
+				73BC8DEE80C417483FB6FA9A120C6AC1 /* Sources */,
+				2CCAC068711F4A54E05D2A27E33D8B75 /* Frameworks */,
+				0B4752BC557133FF103CCC3052DDE9C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48F943D5FAD3DC55426A6088AB689A11 /* PBXTargetDependency */,
+				27A9D5658709CC3A8C387B10EC04B47E /* PBXTargetDependency */,
+				C30F0E5FA47522CC65A3FB897488C08E /* PBXTargetDependency */,
+			);
+			name = "Pods-TopMoviesUITests";
+			productName = "Pods-TopMoviesUITests";
+			productReference = D32DAE39505079E2134CD9DB2210CCB7 /* Pods_TopMoviesUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		45B6FA8F37E6679DFBDA4BB278533E47 /* SwiftLocalhost */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C958BB86F5A4F51CC5910F1156F83CC5 /* Build configuration list for PBXNativeTarget "SwiftLocalhost" */;
+			buildPhases = (
+				6858B8BE389D5B33849723BFBC79BDA1 /* Headers */,
+				D8E8CF73947E0EBED9E330F71102A1C5 /* Sources */,
+				205C51B43BA0DB44A5FF2549148499CC /* Frameworks */,
+				AE43D159E05806B04ED2D3901DF41CCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B46011241EF5A02AAC6949993325E0B /* PBXTargetDependency */,
+			);
+			name = SwiftLocalhost;
+			productName = SwiftLocalhost;
+			productReference = 455D3F95319842D1C5CA2D74471B2E19 /* SwiftLocalhost.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		56EB09272DEFB1968DB13B0458A39902 /* Pods-TopMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90687A21CFF4A54CA14062F686A225B2 /* Build configuration list for PBXNativeTarget "Pods-TopMovies" */;
+			buildPhases = (
+				4686B1E0237B0B4BB881BC44542E982E /* Headers */,
+				63A61E528E073332CBEFAFFB4983CC83 /* Sources */,
+				3D60CFB3115F00630A4B45216BF2554C /* Frameworks */,
+				21A09F18A72804D382590365BB3E8071 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-TopMovies";
+			productName = "Pods-TopMovies";
+			productReference = 60A1BBFC91F35E6A0E52FF233906A09E /* Pods_TopMovies.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				F82807D639FCFDF56A607D3970098A87 /* Headers */,
+				398D9830C2C4A6872C9EEC588214E124 /* Sources */,
+				160EF26C734A27A9436CAB7143AF8F15 /* Frameworks */,
+				B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7770D06F861E88DAE2C4731EB670A7A8 /* Criollo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AF1DDAED373A14EF8F517ACFEBAD263 /* Build configuration list for PBXNativeTarget "Criollo" */;
+			buildPhases = (
+				760AC1A07E2D663F60ED19994164DB94 /* Headers */,
+				4F1E009C648479E5B875B926CB0FB15F /* Sources */,
+				1907B8B2656588F040F4B279CFA1515B /* Frameworks */,
+				48CC872BAB8C9F16CD28C92AAE3AA735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72CC0AFD78A7104895583CA33E0CEF6E /* PBXTargetDependency */,
+			);
+			name = Criollo;
+			productName = Criollo;
+			productReference = F5EE9AFD9EA3149C42F5AC5496CF0B7C /* Criollo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DB5C03D66466DEC39446A4AC0CD559ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
+				7770D06F861E88DAE2C4731EB670A7A8 /* Criollo */,
+				56EB09272DEFB1968DB13B0458A39902 /* Pods-TopMovies */,
+				07D31E6CD360FBFC59F77CA7B3BCE1B8 /* Pods-TopMoviesUITests */,
+				45B6FA8F37E6679DFBDA4BB278533E47 /* SwiftLocalhost */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B4752BC557133FF103CCC3052DDE9C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21A09F18A72804D382590365BB3E8071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48CC872BAB8C9F16CD28C92AAE3AA735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE43D159E05806B04ED2D3901DF41CCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7B5EDC45A81FF70431CFBFB2ABDFFEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		398D9830C2C4A6872C9EEC588214E124 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C237B7AA6F4A2DD17CA05EB90C83362 /* CocoaAsyncSocket-dummy.m in Sources */,
+				1F292B5410B16DBF60D1F47A48216622 /* GCDAsyncSocket.m in Sources */,
+				BF0E4454B28437897BC092AE02CD0C13 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F1E009C648479E5B875B926CB0FB15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DC530C5EBA5757602DCE81ED362137 /* CRApplication.m in Sources */,
+				9AF6FF07D3E6A9FD20E5CA08707C9710 /* CRConnection.m in Sources */,
+				4BFD8D8AD8ACAF5D10122EEB678BA9C3 /* CRFCGIConnection.m in Sources */,
+				C3FEF6C1769368081F976C511DD7B4FD /* CRFCGIRecord.m in Sources */,
+				6337C0BB911F38611223123B9B92A6D1 /* CRFCGIRequest.m in Sources */,
+				758676ACA466F20257CE7EFB95EC59C5 /* CRFCGIResponse.m in Sources */,
+				E7523B92B954A4E856534A40F0C0A936 /* CRFCGIServer.m in Sources */,
+				2E197229189C8207122FED49BCC3162D /* CRFCGIServerConfiguration.m in Sources */,
+				76B8A115A4752498DBF28527CC715C3D /* CRHTTPConnection.m in Sources */,
+				ECAC74CE6177FDA0F283EC0ED5E793B4 /* CRHTTPResponse.m in Sources */,
+				6556D87C10C3D48286FBF523169DDB2F /* CRHTTPServer.m in Sources */,
+				57E60A2866C4293D0E75333E0A20AE80 /* CRHTTPServerConfiguration.m in Sources */,
+				B1FFED369B3C3486B5A527F6F3B27DFA /* CRHTTPSHelper.m in Sources */,
+				1189215EC04CDDD878226F827E41F4F4 /* Criollo-dummy.m in Sources */,
+				AD9F77837557C17246687D7B29C17224 /* CRMessage.m in Sources */,
+				57E799B5C6CC92E0BBF924B1A65374EC /* CRMimeTypeHelper.m in Sources */,
+				6F063862F733177B04A73EFD402F11B7 /* CRNib.m in Sources */,
+				99A79A6AF1B29A61A84F3E1AB010480D /* CRRequest.m in Sources */,
+				343D3DCE7557A2FF5549C4EDC7AB2B60 /* CRRequestRange.m in Sources */,
+				4B6115F2DA1FBBF9D9066B3E78E81F35 /* CRResponse.m in Sources */,
+				9E7FFB454B00139387AA24464DBA640F /* CRRoute.m in Sources */,
+				C903922E536F9ECA73FD5F2CB6FE4F8E /* CRRouteController.m in Sources */,
+				EA599DE4021064E72F3D6D31E467EF7B /* CRRouteMatchingResult.m in Sources */,
+				CB3440DEB5A92BCFFDAC4EE02996B9DA /* CRRouter.m in Sources */,
+				68611F6BE4602652A77679CF6D5FDDAE /* CRServer.m in Sources */,
+				23B4793A9D69B9BC2E8F414732D6B482 /* CRServerConfiguration.m in Sources */,
+				3BA775D1A3F9A92EE51640A3D2166493 /* CRStaticDirectoryManager.m in Sources */,
+				0072CE1EB0410C3C73452CBB74A8B42B /* CRStaticFileManager.m in Sources */,
+				2D18C077D6FEB77F64CF3691A9A8B73D /* CRUploadedFile.m in Sources */,
+				1A777528A537A2E4D94029540D04A589 /* CRView.m in Sources */,
+				536168DC2EB2435E2DBFAD39B6CC73F6 /* CRViewController.m in Sources */,
+				F7B3D7B0C3511A19AE0AE7EDBC2D37E4 /* NSDate+RFC1123.m in Sources */,
+				63CDDBDD718BADEABD600D7FF0EE91D1 /* NSHTTPCookie+Criollo.m in Sources */,
+				A5DE1589B5C6DACE68E58A5704C79608 /* NSString+Criollo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63A61E528E073332CBEFAFFB4983CC83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EBE13CF295A1BF91B9C157B0561857 /* Pods-TopMovies-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73BC8DEE80C417483FB6FA9A120C6AC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5AA3D28E208E76A1D76EDF336684E2 /* Pods-TopMoviesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8E8CF73947E0EBED9E330F71102A1C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E184C980A1D9B5AF990D490DA66A93C7 /* GARequestLoggingReport.swift in Sources */,
+				3150ECD0A818D2B4CBEEAC1862B9AB99 /* GARequestLoggingServer.swift in Sources */,
+				0184CE21C7CF27D3BFF0FAEB423378B9 /* GARequestPayload.swift in Sources */,
+				C3982D6B07E0C1F093FCD54DEAE47CE4 /* GARequestPayloadFactory.swift in Sources */,
+				9D8671E07487F6100FE9DDD3DE64C96C /* LocalhostPort.swift in Sources */,
+				F39AFE640356189C07B17DFA6A28ABC7 /* LocalhostRouter.swift in Sources */,
+				D2E59E0DBB6F7EB3127A9C5D1514ADC3 /* LocalhostServer.swift in Sources */,
+				CA4DD8C6143C8E910D02ADA18C231B3D /* LocalhostServerResponse.swift in Sources */,
+				14160B82CA170CF9FC97113F10CCC5E7 /* SwiftLocalhost-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27A9D5658709CC3A8C387B10EC04B47E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Criollo;
+			target = 7770D06F861E88DAE2C4731EB670A7A8 /* Criollo */;
+			targetProxy = 42B0DF2C317959251C2F2360F18B7C5D /* PBXContainerItemProxy */;
+		};
+		3B46011241EF5A02AAC6949993325E0B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Criollo;
+			target = 7770D06F861E88DAE2C4731EB670A7A8 /* Criollo */;
+			targetProxy = 1A35CA62498474DA2281F1A2E868F2CA /* PBXContainerItemProxy */;
+		};
+		48F943D5FAD3DC55426A6088AB689A11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = CE62DD589C508DD75B35ED6442C11986 /* PBXContainerItemProxy */;
+		};
+		72CC0AFD78A7104895583CA33E0CEF6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 4D99480C67A09A64D1B3864B1ACF929F /* PBXContainerItemProxy */;
+		};
+		C30F0E5FA47522CC65A3FB897488C08E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLocalhost;
+			target = 45B6FA8F37E6679DFBDA4BB278533E47 /* SwiftLocalhost */;
+			targetProxy = 6E4A64A13DBC603EDCD9399DE71779FF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0E271DA89CF3D4540C96BC28C02E052B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB9511DC5E61C7474DDDDE585DC8F556 /* Criollo.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Criollo/Criollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Criollo/Criollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Criollo/Criollo.modulemap";
+				PRODUCT_MODULE_NAME = Criollo;
+				PRODUCT_NAME = Criollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3036F5D90E0F2C884F00ED20927F6531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3B6F4AD334C390EAB934A9B6F7F5E45 /* Pods-TopMoviesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopMoviesUITests/Pods-TopMoviesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopMoviesUITests/Pods-TopMoviesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		330FE6FFF3CAA68109B9887F69C936C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2777DE79D424F72C19DF27A389F66F1E /* Pods-TopMovies.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopMovies/Pods-TopMovies-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopMovies/Pods-TopMovies.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		479917C94A8071BDEC6962BC60BA2D62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6BA0A15DE102FE6C6250FFDA0834F7 /* Pods-TopMoviesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopMoviesUITests/Pods-TopMoviesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopMoviesUITests/Pods-TopMoviesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47AAD27ADB972B60CF15B26918B7A4F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61BF59420F7A8983ACBD63B090178D4A /* Pods-TopMovies.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TopMovies/Pods-TopMovies-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TopMovies/Pods-TopMovies.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B1F13D49B97FF90469FE040925F8D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		71232F246ADDF011B771BFEE0C31105C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B4DAEF74F61CFA1694AA78564D38651 /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7637FCC9AFC67EF2CC046F30A67A0485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7269F2E925CBD241B279D2F8111B91AD /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8397A22CB36DD75764EC5D9066BEB1B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EEAC928E7A5EF5EA27E696BEC99700E /* SwiftLocalhost.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLocalhost/SwiftLocalhost-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLocalhost/SwiftLocalhost-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLocalhost/SwiftLocalhost.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLocalhost;
+				PRODUCT_NAME = SwiftLocalhost;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8EFA68AC855A5B2B43BF716E27BD98D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B4D939075D1C875FEBC39BC6F4BFAD6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020E57A1CD3F6B8925E603AC48F5AD94 /* Criollo.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Criollo/Criollo-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Criollo/Criollo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Criollo/Criollo.modulemap";
+				PRODUCT_MODULE_NAME = Criollo;
+				PRODUCT_NAME = Criollo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BD6F08388ADA0BB8A85DD2DFA7E4659C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09862FB7B75437A0D70B14BF70040FF /* SwiftLocalhost.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftLocalhost/SwiftLocalhost-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftLocalhost/SwiftLocalhost-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftLocalhost/SwiftLocalhost.modulemap";
+				PRODUCT_MODULE_NAME = SwiftLocalhost;
+				PRODUCT_NAME = SwiftLocalhost;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8EFA68AC855A5B2B43BF716E27BD98D /* Debug */,
+				4B1F13D49B97FF90469FE040925F8D8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B2BBD8991DD61ACE6737AADB85AB43 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7637FCC9AFC67EF2CC046F30A67A0485 /* Debug */,
+				71232F246ADDF011B771BFEE0C31105C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		677F3B7032E304CE04FBE5EF13A9A563 /* Build configuration list for PBXNativeTarget "Pods-TopMoviesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				479917C94A8071BDEC6962BC60BA2D62 /* Debug */,
+				3036F5D90E0F2C884F00ED20927F6531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AF1DDAED373A14EF8F517ACFEBAD263 /* Build configuration list for PBXNativeTarget "Criollo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E271DA89CF3D4540C96BC28C02E052B /* Debug */,
+				B4D939075D1C875FEBC39BC6F4BFAD6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90687A21CFF4A54CA14062F686A225B2 /* Build configuration list for PBXNativeTarget "Pods-TopMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				330FE6FFF3CAA68109B9887F69C936C5 /* Debug */,
+				47AAD27ADB972B60CF15B26918B7A4F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C958BB86F5A4F51CC5910F1156F83CC5 /* Build configuration list for PBXNativeTarget "SwiftLocalhost" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD6F08388ADA0BB8A85DD2DFA7E4659C /* Debug */,
+				8397A22CB36DD75764EC5D9066BEB1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

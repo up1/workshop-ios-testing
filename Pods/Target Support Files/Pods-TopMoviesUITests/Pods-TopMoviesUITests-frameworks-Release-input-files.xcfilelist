@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-TopMoviesUITests/Pods-TopMoviesUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/Criollo/Criollo.framework
+${BUILT_PRODUCTS_DIR}/SwiftLocalhost/SwiftLocalhost.framework
