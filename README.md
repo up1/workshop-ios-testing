@@ -2,6 +2,7 @@
 * Unit testing
 * UI testing
 * Fastlane
+* Swift Localhost
 
 ## Code for Testing in Settings page
 
@@ -165,4 +166,11 @@ struct MoviesRouter {
         return URLRequest(url: url)
     }
 }
+```
+
+## Working with [SwiftLocalhost](https://github.com/depoon/SwiftLocalhost)
+```
+$git clone https://github.com/up1/workshop-ios-testing.git -b swiftlocalhost
+$pod update
+$open TopMovies.xcworkspace
 ```
